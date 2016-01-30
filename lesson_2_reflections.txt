@@ -1,3 +1,9 @@
 Q:What happens when you initialize a repostory? Why do you need to do it?
 A:A hidden .git subdirectory is created in the repository root.  This contains
   all the metadata about the repository.
+
+Q:How is the staging area different from the working directory and the
+  repository? What value do you think it offers?
+A:The staging area is in intermediate state before moving files from the
+  working directory to the repository.  It allows you to control which files
+  are under version control and to control which files are committed together.
