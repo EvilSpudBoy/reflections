@@ -7,3 +7,7 @@ Q:How is the staging area different from the working directory and the
 A:The staging area is in intermediate state before moving files from the
   working directory to the repository.  It allows you to control which files
   are under version control and to control which files are committed together.
+
+Q:How can you use the staging area to make sure you have one commit per
+  logical change?
+A:By only adding only those files related to a logical change before committing.
