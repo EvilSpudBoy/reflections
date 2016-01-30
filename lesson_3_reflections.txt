@@ -10,3 +10,12 @@ A:For the same reasons you would want to control when you commit changes.
   Changes you pull might not be compatable with your local changes and may
   break your build.  You might want to wait until you've completed a logical 
   unit of work.  Also they might cause merge conflicts.
+
+Q:Describe the differences between forks, clones, and branches. When would you
+  use one instead of another.
+A:Clones operate on a repository and create a copy of an entire repository, 
+  while branches are in a single repository.  Forks are like clones but 
+  exist only on GitHubs server.  Forks are used when you want to have a 
+  remote but don't want to or don't have rights to commit to the owner's 
+  remote. Clones are used to copy remotes locally.  Branches are for when
+  you want to isolate a feature or bug fix from the main history.
