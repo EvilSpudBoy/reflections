@@ -18,3 +18,6 @@ A:When working on a patch release while continuing to develop new features for
   an upcoming feature release.  Bug fixes could be worked on in the master 
   branch while new features are developed in a specific feature branch.
   
+Q:How do the diagrams help you visualize the branch structure.
+A:It's easier to see how commits relate to one another on a diagram
+
