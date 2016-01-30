@@ -1,0 +1,46 @@
+Q:How did viewing a diff between two versions of a file help you see the bug
+  that was introduced?
+A:Since the previous version worked, the problem has to be related to 
+  a change that was made.  Using a diff tool allows you to limit your
+  attention only to the changes that were made.
+
+Q:How could having easy access to the entire hotory of a file make you a more
+  efficient programmer in the long term?
+A:Several reasons.
+ - you might not become aware of a bug until several revisions later. So it
+   is important to be able to look at changes over time.
+ - Accompanied with meaningful checkin comments, You can determine why
+   some change was introduced (assocate with a ticket or change request)
+ - When working on another programmer's code it is useful to be able to 
+   see how it evolved.
+ - knowing you can always go back to any point in time allows you to program
+   with less fear.
+
+Q:Why do you think some version control systems like Git, allow saving 
+  muliple files in on commit, while other, like Google Docs, treat each file
+  separately?
+A:They are for different audiences. In order to support saving multiple files
+  in a single commit, google docs would need to introduce a concept like git's
+  repository concept in order to group them.  Single file versioning supports
+  what most of google docs and dropbox users would need versioning for.
+
+  On the other hand, the goal in programming is to create a working 
+  application.  The source to build that consists of multiple files, but
+  at any given time in order to have a buildable workng application, the state
+  of the files that make up the application needs to be considered as a whole.
+  In simpler terms the files have dependencies between each other so changes 
+  to one affect the other, so they have to be treated as a unit.
+
+Q:How can you use the commands git log and git diff to view the history of
+  files?
+A:Use 'git log' to get a list of commits made and use 'git diff' to compare 
+  specific changes.
+
+Q:How might using version control make you more confident to make changes that
+  could break something?
+A:Because you know that you can always return to a previous working version
+  of the code.
+
+Q:Now that you have your workspace set up, what do you want to try using Git
+  For?
+A:My next iOS development project.
