@@ -21,3 +21,9 @@ A:When working on a patch release while continuing to develop new features for
 Q:How do the diagrams help you visualize the branch structure.
 A:It's easier to see how commits relate to one another on a diagram
 
+Q:What is the result of merging two branches together? Why do we represent in 
+  the diagram the way we do.
+A:The result of merging two branches is to have changes made in both branches
+  combined into one commit.  It is represented in the diagram to show that
+  it has two parents which are the head of each branch.
+
