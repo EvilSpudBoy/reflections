@@ -1,0 +1,5 @@
+Q:When would you want to use a remote repository rather 
+  than keeping all your work local?
+A:When you want to colloborate with other authors.  When 
+  you want to make your code available to others. Or if you
+  want to have an additional backup of your code.
