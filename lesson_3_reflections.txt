@@ -19,3 +19,8 @@ A:Clones operate on a repository and create a copy of an entire repository,
   remote but don't want to or don't have rights to commit to the owner's 
   remote. Clones are used to copy remotes locally.  Branches are for when
   you want to isolate a feature or bug fix from the main history.
+
+Q:What is the benefit of having a copy of the last known state of the remote
+  stored locally?
+A:It allows you to syncronize changes from the remote without having to 
+  incorporate them to your local master right away.
