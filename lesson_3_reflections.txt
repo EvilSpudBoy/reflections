@@ -29,3 +29,12 @@ Q:How would you collaborate without using Git or GitHub?  What would be
   easier, and what would be harder.
 A:Using a centralized VCS like SVN.  reviewing changes would be 
   harder.
+
+Q:When would you want to make changes in a seperate branch rather than 
+  directly in master? What benefits does each approach have.
+A:Making changes in master simplifies some workflow and it might be best when 
+  there is a small team of developers within an organization working on a
+  product and they can colaborate on changes outside of github.  In the case 
+  where you have a lot of develpers (like an os project) and they have various
+  skill levels and  you want to place strict controls to review what can be 
+  added to master then the branch workflow is best.   
