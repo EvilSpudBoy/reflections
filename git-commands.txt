@@ -1,0 +1,151 @@
+# See what version of git is running on your system
+git --version
+
+# stages a particular file
+git add filename
+
+# stages all files
+git add -A
+
+# stages all new and modified, but not deleted
+git add .
+
+#stages all modified and deleted, but not new
+git add .
+
+# lists all branches
+git branch
+
+# delete a branch (like after a merge)
+git branch -d branchname
+
+# create a branch
+git branch newbranch
+
+# switch working copy to a particular commit
+git checkout 25ede836903881848fea811df5b687b59d962da3
+
+# switch working copy to a particular branch
+git checkout branchname
+
+# create a branch and checkout
+git checkout -b newbranch
+
+# above is equivalent to:
+git branch newbranch
+git checkout newbranch
+
+# clone a remote repository
+git clone https://github.com/EvilSpudBoy/HypnoNerd.git
+
+# commit the staged files to the repository
+git commit
+
+# redo a commit updating the author
+git commit --amend --reset-author
+
+# various global git settings
+git config --global color.ui auto
+git config --global core.editor "'/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl' -n -w"
+git config --global core.editor "nano"
+git config --global merge.conflictstyle diff3
+git config --global push.default upstream
+git config --global user.email
+git config --global user.email "EvilSpudBoy@users.noreply.github.com"
+git config --global user.email michael.stevens@gmail.com
+git config --global user.name
+git config --global user.name "EvilSpudBoy"
+git config --global user.name "Michael Stevens"
+
+# git settings for a specific repository
+git config user.name "EvilSpudBoy"
+git config user.email "EvilSpudBoy@users.noreply.github.com"
+
+git credential-osxkeychain
+
+# view changes between the working directory and staging area
+git diff
+
+# view changes between the working derictory and repository
+git diff --staged
+
+# view changes between two commits
+git diff 4035769377cce96a88d5c1167079e12f30492391 25ede836903881848fea811df5b687b59d962da3
+
+# get the latest remote changes and update the origin/master branch
+git fetch
+
+# get help on git commands
+git help
+
+# get help on a specific comand
+git help log
+
+# initialize a repository in directory not under version control
+git init
+
+# display git history
+git log
+
+# display git history in graphical form with one line per entry
+git log --graph --oneline
+
+# history for multiple branches as graph
+git log --graph --oneline master easy-mode
+
+# compact history
+git log --oneline
+
+# compact history with decoration
+git log --oneline --decorate
+
+# show additional info in history about files changed
+git log --stat
+
+# show only the previous history entry
+git log -n 1 
+
+# show history for a branch
+git log origin/master
+
+# merge the current branch with the named branch
+git merge branchname
+
+# download history and incorporate changes
+git pull
+
+# above is equivalent to:
+git fetch
+git merge origin/master
+
+# update the remote  -u option sets the upstream repo for future
+# push pull actions for that branch
+git push -u origin master
+git push origin different-oil 
+
+# list remotes -v lists more detail (verbose)
+git remote
+git remote -v
+
+# add remote named [origin] for URL
+git remote add origin https://github.com/EvilSpudBoy/pitch-perfect.git
+
+# discard all changes in current working directory (unreversable)
+git reset --hard
+
+# remove a file from version control and stages the deletion
+git rm lesson_2_reflections.txt
+
+# remove from version control but keep local file
+git rm lesson_2_reflections.txt --cached
+
+# change a filename so that it is tracked
+git mv original-filename new-filename
+
+# diff between a commit and it's parent
+git show 3884eab839af1e82c44267484cf2945a766081f3
+
+# show the status of changes
+git status
+
+
